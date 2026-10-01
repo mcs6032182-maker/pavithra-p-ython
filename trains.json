@@ -1,0 +1,9 @@
+[
+    {
+        "number": "2",
+        "name": "chennai express",
+        "source": "4",
+        "destination": "pondy",
+        "seats": 4
+    }
+]

@@ -1,0 +1,24 @@
+name = input("Enter employee name: ")
+n = int(input("Enter number of tasks: "))
+
+total = 0
+
+for i in range(n):
+    score = int(input("Enter task score: "))
+    total += score
+
+average = total / n
+
+if average >= 90:
+    performance = "Excellent"
+elif average >= 75:
+    performance = "Good"
+elif average >= 50:
+    performance = "Average"
+else:
+    performance = "Poor"
+
+print("\nEmployee:", name)
+print("Total Score:", total)
+print("Average Score:", average)
+print("Performance:", performance)

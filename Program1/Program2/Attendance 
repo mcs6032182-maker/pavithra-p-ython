@@ -1,0 +1,25 @@
+name = input("Enter employee name: ")
+days = int(input("Enter total working days: "))
+present = 0
+
+for i in range(days):
+    status = input("Enter P for Present / A for Absent: ")
+
+    if status.upper() == "P":
+        present += 1
+
+percentage = (present / days) * 100
+
+if percentage >= 90:
+    grade = "Excellent"
+elif percentage >= 75:
+    grade = "Good"
+elif percentage >= 50:
+    grade = "Average"
+else:
+    grade = "Poor"
+
+print("\nEmployee:", name)
+print("Present Days:", present)
+print("Attendance:", percentage, "%")
+print("Rating:", grade)
